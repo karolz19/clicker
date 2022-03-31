@@ -42,6 +42,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.A1Timer = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,12 +175,24 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "level";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Snow;
+            this.label4.Location = new System.Drawing.Point(503, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 23);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "LVL x 100";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -213,5 +226,6 @@
         private TextBox textBox3;
         private System.Windows.Forms.Timer A1Timer;
         private Label label3;
+        private Label label4;
     }
 }

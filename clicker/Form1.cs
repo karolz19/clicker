@@ -78,16 +78,12 @@ namespace clicker
         {
             
             
-            int upgradeCost = A1Ammount * 100;
+            int upgradeCost = A1Ammount * 10;
             if (cash >= upgradeCost)
             {
                 A1Ammount += 10;
                 textBox2.Text = A1Ammount.ToString();
-                A1Interval++;
-                textBox3.Text = A1Interval.ToString();
-                A1Timer.Interval = (60 / A1Interval) * 100;
-                if (!A1Timer.Enabled)
-                    A1Timer.Enabled = true;
+
                 cash -= upgradeCost;
 
             }
