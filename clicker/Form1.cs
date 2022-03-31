@@ -22,15 +22,15 @@ namespace clicker
             textBox2.Text = A1Ammount.ToString();
             textBox3.Text = A1Interval.ToString();
 
-            
+
         }
 
         void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            pictureBox1.Visible=false;
+            pictureBox1.Visible = false;
 
-       
-            
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace clicker
             label1.Text = "Hajs: $" + cash.ToString();
             pictureBox1.Visible = true;
             timer.Start();
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -76,23 +76,48 @@ namespace clicker
 
         private void button3_Click(object sender, EventArgs e)
         {
+            
+            
+            int upgradeCost = A1Ammount * 100;
+            if (cash >= upgradeCost)
+            {
+                A1Ammount += 10;
+                textBox2.Text = A1Ammount.ToString();
+                A1Interval++;
+                textBox3.Text = A1Interval.ToString();
+                A1Timer.Interval = (60 / A1Interval) * 100;
+                if (!A1Timer.Enabled)
+                    A1Timer.Enabled = true;
+                cash -= upgradeCost;
 
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            A1Interval++;
-            A1Timer.Interval = (60 / A1Interval) = 1000;
-            if(!A1Timer.Enabled)
-                A1Timer.Enabled = true;
+            int upgradeCost = A1Interval * 100;
+            if (cash >= upgradeCost)
+            {
+                A1Interval++;
+                textBox3.Text = A1Interval.ToString();
+                A1Timer.Interval = (60 / A1Interval) * 100;
+                if (!A1Timer.Enabled)
+                    A1Timer.Enabled = true;
+                cash -= upgradeCost;
 
-
+            }
         }
 
         private void A1Tick(object sender, EventArgs e)
         {
             cash += A1Ammount;
-            label1.Text = "Kasa: $" + cash.ToString();
+        }
+
+        private void LEVEL(object sender, EventArgs e)
+        {
+
         }
     }
 }
+
+   
