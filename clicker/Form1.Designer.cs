@@ -132,11 +132,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(459, 12);
+            this.label2.Location = new System.Drawing.Point(492, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 23);
+            this.label2.Size = new System.Drawing.Size(83, 23);
             this.label2.TabIndex = 7;
-            this.label2.Text = "auto upgrade";
+            this.label2.Text = "auto hajs";
             // 
             // textBox2
             // 
@@ -180,11 +180,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(503, 35);
+            this.label4.Location = new System.Drawing.Point(492, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 23);
+            this.label4.Size = new System.Drawing.Size(82, 23);
             this.label4.TabIndex = 11;
-            this.label4.Text = "LVL x 100";
+            this.label4.Text = "LVL x 100$";
             // 
             // Form1
             // 
