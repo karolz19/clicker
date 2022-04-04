@@ -1,3 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Media;
+
 namespace clicker
 {
     public partial class Form1 : Form
@@ -45,6 +56,8 @@ namespace clicker
             label1.Text = "Hajs: $" + cash.ToString();
             pictureBox1.Visible = true;
             timer.Start();
+            SoundPlayer splayer = new SoundPlayer(@"C:\Users\3111272\source\repos\clicker\nigggger.wav");
+            splayer.Play();
 
         }
 
