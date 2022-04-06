@@ -56,7 +56,7 @@ namespace clicker
             label1.Text = "Hajs: $" + cash.ToString();
             pictureBox1.Visible = true;
             timer.Start();
-            SoundPlayer splayer = new SoundPlayer(@"C:\Users\3111272\source\repos\clicker\nigggger.wav");
+            SoundPlayer splayer = new SoundPlayer(clicker.Properties.Resources.nigggger);
             splayer.Play();
 
         }
