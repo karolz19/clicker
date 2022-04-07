@@ -18,6 +18,8 @@ namespace clicker
         System.Timers.Timer timer;
         int A1Ammount;
         int A1Interval;
+        double time = 10;
+        int clicks = 10;
 
 
         public Form1()
@@ -58,6 +60,15 @@ namespace clicker
             timer.Start();
             SoundPlayer splayer = new SoundPlayer(clicker.Properties.Resources.nigggger);
             splayer.Play();
+            
+
+            if(time > 0)
+            {
+                clicks++;
+                label6.Text = "Clicks: " + clicks;
+                timer1.Start();
+            }
+            
 
         }
 
@@ -126,7 +137,26 @@ namespace clicker
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (time > 1)
+            {
+                time -= 0.1;
+                label7.Text = time.ToString();
+
+            } else
+            {
+                timer1.Stop();
+            }
+            
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+} 
 
    
